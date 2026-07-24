@@ -100,9 +100,16 @@
       <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" target="_blank" rel="noopener" class="btn btn--gold btn--sm nav__cta" data-i18n="nav.cta" data-href-ru="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" data-href-en="https://wa.me/77472559183?text=Hello!%20I%20would%20like%20to%20book%20a%20room%20at%20IZI%20Hotel">Забронировать</a>
     </nav>
 
-    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header__mobile-actions">
+      <div class="lang-switch lang-switch--header-mobile" id="langSwitchHeaderMobile">
+        <button class="lang-switch__btn" data-lang="ru" aria-label="Русский">RU</button>
+        <button class="lang-switch__btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -118,10 +125,6 @@
     <li><a href="#gallery" class="mobile-menu__link" data-i18n="nav.gallery">Галерея</a></li>
     <li><a href="#reviews" class="mobile-menu__link" data-i18n="nav.reviews">Отзывы</a></li>
   </ul>
-  <div class="lang-switch lang-switch--mobile" id="langSwitchMobile">
-    <button class="lang-switch__btn" data-lang="ru" aria-label="Русский">RU</button>
-    <button class="lang-switch__btn" data-lang="en" aria-label="English">EN</button>
-  </div>
   <div class="mobile-menu__contact">
     <a href="tel:+77472559183">+7 747 255 91 83</a>
     <a href="https://wa.me/77472559183" target="_blank" rel="noopener" class="btn btn--gold" data-i18n="hero.whatsapp">Написать в WhatsApp</a>
