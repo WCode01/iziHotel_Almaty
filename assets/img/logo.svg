@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-labelledby="iziLogoTitle">
+  <title id="iziLogoTitle">IZI Hotel</title>
+  <defs>
+    <radialGradient id="redGrad" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#8a1220"/>
+      <stop offset="65%" stop-color="#6f0e1a"/>
+      <stop offset="100%" stop-color="#560a15"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3d98b"/>
+      <stop offset="45%" stop-color="#caa64a"/>
+      <stop offset="100%" stop-color="#8f6d24"/>
+    </linearGradient>
+    <linearGradient id="goldGradSoft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e9cd83"/>
+      <stop offset="100%" stop-color="#b9944a"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="97" fill="url(#redGrad)" stroke="url(#goldGrad)" stroke-width="5"/>
+
+  <g fill="url(#goldGradSoft)" stroke="url(#goldGradSoft)" stroke-width="0.6">
+    <rect x="52" y="70" width="14" height="48" />
+    <rect x="70" y="60" width="14" height="58" />
+    <rect x="88" y="46" width="24" height="72" />
+    <rect x="116" y="60" width="14" height="58" />
+    <rect x="134" y="70" width="14" height="48" />
+    <polygon points="88,46 100,32 112,46" />
+  </g>
+  <g fill="#6f0e1a">
+    <rect x="55" y="76" width="4" height="8"/><rect x="61" y="76" width="4" height="8"/>
+    <rect x="73" y="68" width="4" height="8"/><rect x="79" y="68" width="4" height="8"/>
+    <rect x="93" y="56" width="5" height="10"/><rect x="102" y="56" width="5" height="10"/>
+    <rect x="119" y="68" width="4" height="8"/><rect x="125" y="68" width="4" height="8"/>
+    <rect x="137" y="76" width="4" height="8"/><rect x="143" y="76" width="4" height="8"/>
+  </g>
+  <polygon points="93,118 100,104 107,118" fill="#6f0e1a"/>
+
+  <g fill="url(#goldGradSoft)">
+    <polygon points="72,88 74.5,93.5 80,94 76,97.8 77.2,103.3 72,100.4 66.8,103.3 68,97.8 64,94 69.5,93.5"/>
+    <polygon points="86,88 88.5,93.5 94,94 90,97.8 91.2,103.3 86,100.4 80.8,103.3 82,97.8 78,94 83.5,93.5"/>
+    <polygon points="100,88 102.5,93.5 108,94 104,97.8 105.2,103.3 100,100.4 94.8,103.3 96,97.8 92,94 97.5,93.5"/>
+    <polygon points="114,88 116.5,93.5 122,94 118,97.8 119.2,103.3 114,100.4 108.8,103.3 110,97.8 106,94 111.5,93.5"/>
+  </g>
+
+  <line x1="35" y1="120" x2="165" y2="120" stroke="url(#goldGradSoft)" stroke-width="2"/>
+
+  <text x="100" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#f7ecd2" letter-spacing="4" font-weight="700">IZI</text>
+
+  <line x1="46" y1="163" x2="70" y2="163" stroke="url(#goldGradSoft)" stroke-width="1.2"/>
+  <text x="100" y="168" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="url(#goldGradSoft)" letter-spacing="4" font-weight="600">HOTEL</text>
+  <line x1="130" y1="163" x2="154" y2="163" stroke="url(#goldGradSoft)" stroke-width="1.2"/>
+
+  <g transform="translate(100,180)">
+    <ellipse cx="0" cy="2" rx="9" ry="2.6" fill="none" stroke="url(#goldGradSoft)" stroke-width="1"/>
+    <path d="M -8 2 A 8 7 0 0 1 8 2 Z" fill="url(#goldGradSoft)"/>
+    <circle cx="0" cy="-6.5" r="1.6" fill="url(#goldGradSoft)"/>
+  </g>
+</svg>
