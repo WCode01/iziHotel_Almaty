@@ -84,16 +84,20 @@
 
     <nav class="nav" id="nav">
       <ul class="nav__list">
-        <li><a href="#home" class="nav__link">Главная</a></li>
-        <li><a href="#about" class="nav__link">О нас</a></li>
-        <li><a href="#rooms" class="nav__link">Номера</a></li>
-        <li><a href="#amenities" class="nav__link">Удобства</a></li>
-        <li><a href="#map" class="nav__link">Карта</a></li>
-        <li><a href="#contacts" class="nav__link">Контакты</a></li>
-        <li><a href="#gallery" class="nav__link">Галерея</a></li>
-        <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+        <li><a href="#home" class="nav__link" data-i18n="nav.home">Главная</a></li>
+        <li><a href="#about" class="nav__link" data-i18n="nav.about">О нас</a></li>
+        <li><a href="#rooms" class="nav__link" data-i18n="nav.rooms">Номера</a></li>
+        <li><a href="#amenities" class="nav__link" data-i18n="nav.amenities">Удобства</a></li>
+        <li><a href="#map" class="nav__link" data-i18n="nav.map">Карта</a></li>
+        <li><a href="#contacts" class="nav__link" data-i18n="nav.contacts">Контакты</a></li>
+        <li><a href="#gallery" class="nav__link" data-i18n="nav.gallery">Галерея</a></li>
+        <li><a href="#reviews" class="nav__link" data-i18n="nav.reviews">Отзывы</a></li>
       </ul>
-      <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" target="_blank" rel="noopener" class="btn btn--gold btn--sm nav__cta">Забронировать</a>
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-switch__btn" data-lang="ru" aria-label="Русский">RU</button>
+        <button class="lang-switch__btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" target="_blank" rel="noopener" class="btn btn--gold btn--sm nav__cta" data-i18n="nav.cta" data-href-ru="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" data-href-en="https://wa.me/77472559183?text=Hello!%20I%20would%20like%20to%20book%20a%20room%20at%20IZI%20Hotel">Забронировать</a>
     </nav>
 
     <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
@@ -105,18 +109,22 @@
 <!-- Mobile menu overlay -->
 <div class="mobile-menu" id="mobileMenu">
   <ul class="mobile-menu__list">
-    <li><a href="#home" class="mobile-menu__link">Главная</a></li>
-    <li><a href="#about" class="mobile-menu__link">О нас</a></li>
-    <li><a href="#rooms" class="mobile-menu__link">Номера</a></li>
-    <li><a href="#amenities" class="mobile-menu__link">Удобства</a></li>
-    <li><a href="#map" class="mobile-menu__link">Карта</a></li>
-    <li><a href="#contacts" class="mobile-menu__link">Контакты</a></li>
-    <li><a href="#gallery" class="mobile-menu__link">Галерея</a></li>
-    <li><a href="#reviews" class="mobile-menu__link">Отзывы</a></li>
+    <li><a href="#home" class="mobile-menu__link" data-i18n="nav.home">Главная</a></li>
+    <li><a href="#about" class="mobile-menu__link" data-i18n="nav.about">О нас</a></li>
+    <li><a href="#rooms" class="mobile-menu__link" data-i18n="nav.rooms">Номера</a></li>
+    <li><a href="#amenities" class="mobile-menu__link" data-i18n="nav.amenities">Удобства</a></li>
+    <li><a href="#map" class="mobile-menu__link" data-i18n="nav.map">Карта</a></li>
+    <li><a href="#contacts" class="mobile-menu__link" data-i18n="nav.contacts">Контакты</a></li>
+    <li><a href="#gallery" class="mobile-menu__link" data-i18n="nav.gallery">Галерея</a></li>
+    <li><a href="#reviews" class="mobile-menu__link" data-i18n="nav.reviews">Отзывы</a></li>
   </ul>
+  <div class="lang-switch lang-switch--mobile" id="langSwitchMobile">
+    <button class="lang-switch__btn" data-lang="ru" aria-label="Русский">RU</button>
+    <button class="lang-switch__btn" data-lang="en" aria-label="English">EN</button>
+  </div>
   <div class="mobile-menu__contact">
     <a href="tel:+77472559183">+7 747 255 91 83</a>
-    <a href="https://wa.me/77472559183" target="_blank" rel="noopener" class="btn btn--gold">Написать в WhatsApp</a>
+    <a href="https://wa.me/77472559183" target="_blank" rel="noopener" class="btn btn--gold" data-i18n="hero.whatsapp">Написать в WhatsApp</a>
   </div>
 </div>
 
@@ -131,16 +139,16 @@
       <div class="hero__overlay"></div>
     </div>
     <div class="container hero__content" data-reveal>
-      <p class="eyebrow eyebrow--light">Гостиница в Алматы · ул. Керуентау, 2/1</p>
+      <p class="eyebrow eyebrow--light" data-i18n="hero.eyebrow">Гостиница в Алматы · ул. Керуентау, 2/1</p>
       <h1 class="hero__title">IZI <span>HOTEL</span></h1>
-      <p class="hero__subtitle">IZI HOTEL-Уютные номера от 6000тг😍</p>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">IZI HOTEL-Уютные номера от 6000тг😍</p>
       <div class="hero__actions">
-        <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" target="_blank" rel="noopener" class="btn btn--gold btn--lg">Написать в WhatsApp</a>
+        <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" target="_blank" rel="noopener" class="btn btn--gold btn--lg" data-i18n="hero.whatsapp" data-href-ru="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" data-href-en="https://wa.me/77472559183?text=Hello!%20I%20would%20like%20to%20book%20a%20room%20at%20IZI%20Hotel">Написать в WhatsApp</a>
       </div>
       <div class="hero__stats">
-        
-        <div class="hero__stat"><span>29</span><small>номеров</small></div>
-        <div class="hero__stat"><span>24/7</span><small>стойка регистрации</small></div>
+
+        <div class="hero__stat"><span>29</span><small data-i18n="hero.stat.rooms">номеров</small></div>
+        <div class="hero__stat"><span>24/7</span><small data-i18n="hero.stat.desk">стойка регистрации</small></div>
       </div>
     </div>
     <a href="#about" class="hero__scroll" aria-label="Прокрутить вниз"><span></span></a>
@@ -157,10 +165,10 @@
         referrerpolicy="no-referrer-when-downgrade" title="IZI Hotel на карте"></iframe>
     </div>
     <div class="map__card" data-reveal>
-      <p class="eyebrow">Как нас найти</p>
+      <p class="eyebrow" data-i18n="map.eyebrow">Как нас найти</p>
       <h3>ул. Керуентау, 2/1, Алматы</h3>
-      <p>Ауэзовский район, 050052</p>
-      <a href="https://2gis.kz/almaty/geo/70000001112716389" target="_blank" rel="noopener" class="btn btn--gold btn--sm">Открыть в 2ГИС</a>
+      <p data-i18n="map.district">Ауэзовский район, 050052</p>
+      <a href="https://2gis.kz/almaty/geo/70000001112716389" target="_blank" rel="noopener" class="btn btn--gold btn--sm" data-i18n="map.open2gis">Открыть в 2ГИС</a>
     </div>
   </section>
 
@@ -168,22 +176,22 @@
   <section class="contacts" id="contacts">
     <div class="container">
       <div class="section-head" data-reveal>
-        <p class="eyebrow">Свяжитесь с нами</p>
-        <h2 class="section-title">Контакты</h2>
+        <p class="eyebrow" data-i18n="contacts.eyebrow">Свяжитесь с нами</p>
+        <h2 class="section-title" data-i18n="contacts.title">Контакты</h2>
       </div>
 
       <div class="contacts__grid">
         <a class="contact-card" data-reveal href="https://2gis.kz/almaty/geo/70000001112716389" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-          <div><span>Адрес</span><strong>ул. Керуентау, 2/1, Алматы</strong></div>
+          <div><span data-i18n="contacts.address">Адрес</span><strong>ул. Керуентау, 2/1, Алматы</strong></div>
         </a>
         <a class="contact-card" data-reveal href="tel:+77472559183">
           <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg>
-          <div><span>Телефон</span><strong>+7 747 255 91 83</strong></div>
+          <div><span data-i18n="contacts.phone">Телефон</span><strong>+7 747 255 91 83</strong></div>
         </a>
-        <a class="contact-card" data-reveal href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20узнать%20о%20наличии%20номеров%20в%20IZI%20Hotel" target="_blank" rel="noopener">
+        <a class="contact-card" data-reveal href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20узнать%20о%20наличии%20номеров%20в%20IZI%20Hotel" target="_blank" rel="noopener" data-i18n-href data-href-ru="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20узнать%20о%20наличии%20номеров%20в%20IZI%20Hotel" data-href-en="https://wa.me/77472559183?text=Hello!%20I%20would%20like%20to%20know%20about%20room%20availability%20at%20IZI%20Hotel">
           <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.6 2.5 3.9 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4-.1.4-.2 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
-          <div><span>WhatsApp</span><strong>Написать нам</strong></div>
+          <div><span>WhatsApp</span><strong data-i18n="contacts.whatsapp">Написать нам</strong></div>
         </a>
         <a class="contact-card" data-reveal href="https://www.instagram.com/izi_hotel_almaty?utm_source=qr" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.8 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
@@ -195,7 +203,7 @@
         </a>
         <a class="contact-card" data-reveal href="https://www.booking.com/hotel/kz/izi-on-zhandosova.ru.html?aid=898224&app_hotel_id=16019288&checkin=2026-07-24&checkout=2026-07-25&from_sn=ios&group_adults=2&group_children=0&label=hotel_details-TslQ9aU%401784840712&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA%2C" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M4 3h9a5 5 0 0 1 0 10H8v8H4zm4 3v4h5a2 2 0 0 0 0-4zm0 6.5V17h6a2.25 2.25 0 0 0 0-4.5z"/></svg>
-          <div><span>Booking.com</span><strong>Забронировать онлайн</strong></div>
+          <div><span>Booking.com</span><strong data-i18n="contacts.bookonline">Забронировать онлайн</strong></div>
         </a>
       </div>
     </div>
@@ -222,9 +230,9 @@
       </div>
 
       <div class="about__content" data-reveal>
-        <p class="eyebrow">О гостинице</p>
-        <h2 class="section-title">Комфорт, который всегда рядом</h2>
-        <p class="about__text">
+        <p class="eyebrow" data-i18n="about.eyebrow">О гостинице</p>
+        <h2 class="section-title" data-i18n="about.title">Комфорт, который всегда рядом</h2>
+        <p class="about__text" data-i18n="about.text">
           IZI Hotel — современная гостиница в Ауэзовском районе Алматы, на улице Керуентау, 2/1.
           Мы создали пространство, где чистота, тишина и продуманные детали делают отдых
           по-настоящему приятным — будь то короткая передышка на пару часов, деловая поездка
@@ -233,17 +241,17 @@
         </p>
 
         <ul class="about__points">
-          <li><span class="about__point-icon">◆</span> Круглосуточное заселение и выезд</li>
-          <li><span class="about__point-icon">◆</span> Чистые и уютные номера с продуманным дизайном</li>
-          <li><span class="about__point-icon">◆</span> Гибкие тарифы — от 2 часов до нескольких суток</li>
-          <li><span class="about__point-icon">◆</span> Бесплатный Wi-Fi и парковка для гостей</li>
-          <li><span class="about__point-icon">◆</span> Удобное расположение в Алматы</li>
+          <li><span class="about__point-icon">◆</span> <span data-i18n="about.point1">Круглосуточное заселение и выезд</span></li>
+          <li><span class="about__point-icon">◆</span> <span data-i18n="about.point2">Чистые и уютные номера с продуманным дизайном</span></li>
+          <li><span class="about__point-icon">◆</span> <span data-i18n="about.point3">Гибкие тарифы — от 2 часов до нескольких суток</span></li>
+          <li><span class="about__point-icon">◆</span> <span data-i18n="about.point4">Бесплатный Wi-Fi и парковка для гостей</span></li>
+          <li><span class="about__point-icon">◆</span> <span data-i18n="about.point5">Удобное расположение в Алматы</span></li>
         </ul>
 
         <div class="about__cta">
-          <a href="#rooms" class="btn btn--primary">Смотреть номера</a>
+          <a href="#rooms" class="btn btn--primary" data-i18n="about.viewrooms">Смотреть номера</a>
           <a href="tel:+77472559183" class="about__phone">
-            <span>Позвонить нам</span>
+            <span data-i18n="about.callus">Позвонить нам</span>
             <strong>+7 747 255 91 83</strong>
           </a>
         </div>
@@ -255,9 +263,9 @@
   <section class="rooms" id="rooms">
     <div class="container">
       <div class="section-head" data-reveal>
-        <p class="eyebrow">Размещение</p>
-        <h2 class="section-title">Наши номера</h2>
-        <p class="section-sub">Гибкие тарифы для любых целей — краткая остановка, рабочая поездка или отдых на несколько суток. Точную стоимость и наличие уточняйте при бронировании.</p>
+        <p class="eyebrow" data-i18n="rooms.eyebrow">Размещение</p>
+        <h2 class="section-title" data-i18n="rooms.title">Наши номера</h2>
+        <p class="section-sub" data-i18n="rooms.subtitle">Гибкие тарифы для любых целей — краткая остановка, рабочая поездка или отдых на несколько суток. Точную стоимость и наличие уточняйте при бронировании.</p>
       </div>
 
       <div class="rooms__grid">
@@ -268,23 +276,23 @@
               <source srcset="assets/img/optimized/room-standard.webp" type="image/webp">
               <img src="assets/img/optimized/room-standard.jpg" alt="Стандартный номер IZI Hotel" loading="lazy" width="600" height="720">
             </picture>
-            <span class="room-card__tag">Популярный</span>
+            <span class="room-card__tag" data-i18n="rooms.popular">Популярный</span>
           </div>
           <div class="room-card__body">
-            <h3>Стандарт</h3>
-            <p>Уютный номер с двуспальной кроватью, кондиционером, телевизором и всем необходимым для комфортного отдыха.</p>
+            <h3 data-i18n="rooms.standard.name">Стандарт</h3>
+            <p data-i18n="rooms.standard.desc">Уютный номер с двуспальной кроватью, кондиционером, телевизором и всем необходимым для комфортного отдыха.</p>
             <div class="room-card__prices">
-              <div><span>2 часа</span><strong>6 000 ₸</strong></div>
-              <div><span>Пол суток (12 ч)</span><strong>12 000 ₸</strong></div>
-              <div><span>Сутки (24 ч)</span><strong>15 000 ₸</strong></div>
+              <div><span data-i18n="rooms.price.2h">2 часа</span><strong>6 000 ₸</strong></div>
+              <div><span data-i18n="rooms.price.12h">Пол суток (12 ч)</span><strong>12 000 ₸</strong></div>
+              <div><span data-i18n="rooms.price.24h">Сутки (24 ч)</span><strong>15 000 ₸</strong></div>
             </div>
-            <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20%22Стандарт%22" target="_blank" rel="noopener" class="btn btn--primary btn--block">Забронировать</a>
+            <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20%22Стандарт%22" target="_blank" rel="noopener" class="btn btn--primary btn--block" data-i18n="rooms.book" data-href-ru="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20%22Стандарт%22" data-href-en="https://wa.me/77472559183?text=Hello!%20I%20would%20like%20to%20book%20the%20%22Standard%22%20room">Забронировать</a>
           </div>
         </article>
 
       </div>
 
-      <p class="rooms__note">* Тарифы указаны для номеров категории «Стандарт» на дату публикации сайта и могут быть изменены. Актуальную стоимость и свободные номера уточняйте по телефону или в WhatsApp.</p>
+      <p class="rooms__note" data-i18n="rooms.note">* Тарифы указаны для номеров категории «Стандарт» на дату публикации сайта и могут быть изменены. Актуальную стоимость и свободные номера уточняйте по телефону или в WhatsApp.</p>
     </div>
   </section>
 
@@ -292,50 +300,50 @@
   <section class="amenities" id="amenities">
     <div class="container">
       <div class="section-head section-head--center" data-reveal>
-        <p class="eyebrow">Для вашего комфорта</p>
-        <h2 class="section-title">Удобства гостиницы</h2>
+        <p class="eyebrow" data-i18n="amenities.eyebrow">Для вашего комфорта</p>
+        <h2 class="section-title" data-i18n="amenities.title">Удобства гостиницы</h2>
       </div>
 
       <div class="amenities__grid">
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M12 18.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM6.3 14.8a8 8 0 0 1 11.4 0l-1.9 1.9a5.5 5.5 0 0 0-7.6 0zM2.8 11.3a13 13 0 0 1 18.4 0l-1.9 1.9a10.5 10.5 0 0 0-14.6 0z"/></svg>
-          <h3>Бесплатный Wi-Fi</h3>
-          <p>Быстрый интернет на всей территории гостиницы</p>
+          <h3 data-i18n="amenities.wifi.title">Бесплатный Wi-Fi</h3>
+          <p data-i18n="amenities.wifi.desc">Быстрый интернет на всей территории гостиницы</p>
         </div>
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M6 3h8a4 4 0 0 1 4 4 4 4 0 0 1-3 3.9V13a4 4 0 0 1-4 4H9v4H6zm3 3v6h5a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"/></svg>
-          <h3>Парковка</h3>
-          <p>Удобная парковка для гостей отеля</p>
+          <h3 data-i18n="amenities.parking.title">Парковка</h3>
+          <p data-i18n="amenities.parking.desc">Удобная парковка для гостей отеля</p>
         </div>
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M3 6h18v9H3zM1 15h22v2H1zM8 20l1.2-3h5.6L16 20z"/></svg>
-          <h3>Кондиционер</h3>
-          <p>Индивидуальный климат-контроль в номере</p>
+          <h3 data-i18n="amenities.ac.title">Кондиционер</h3>
+          <p data-i18n="amenities.ac.desc">Индивидуальный климат-контроль в номере</p>
         </div>
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M4 4h16v12H4zm-1 14h18v2H3zm5-11h6v6H8z"/></svg>
-          <h3>Телевизор</h3>
-          <p>Смарт-ТВ с широким выбором каналов</p>
+          <h3 data-i18n="amenities.tv.title">Телевизор</h3>
+          <p data-i18n="amenities.tv.desc">Смарт-ТВ с широким выбором каналов</p>
         </div>
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M7 2h2v3.1A5 5 0 0 1 13 10h4a1 1 0 0 1 1 1c0 4.4-2.7 8.1-6.5 9.6L12 22l-1.5-1.4C6.7 19.1 4 15.4 4 11a1 1 0 0 1 1-1h4A5 5 0 0 1 7 5.1z"/></svg>
-          <h3>Душ</h3>
-          <p>Собственная ванная комната в номере</p>
+          <h3 data-i18n="amenities.shower.title">Душ</h3>
+          <p data-i18n="amenities.shower.desc">Собственная ванная комната в номере</p>
         </div>
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M4 10a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v1H4zm9 1v-1a3 3 0 0 1 3-3h1a3 3 0 0 1 3 3v1zM3 13h18v2H3zm1 3h4v3H4zm12 0h4v3h-4z"/></svg>
-          <h3>Семейные номера</h3>
-          <p>Просторные варианты размещения для всей семьи</p>
+          <h3 data-i18n="amenities.family.title">Семейные номера</h3>
+          <p data-i18n="amenities.family.desc">Просторные варианты размещения для всей семьи</p>
         </div>
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm.8 5v5.4l4.2 2.5-.8 1.3-5-3V7z"/></svg>
-          <h3>Круглосуточная стойка</h3>
-          <p>Заселение и поддержка в любое время суток</p>
+          <h3 data-i18n="amenities.desk.title">Круглосуточная стойка</h3>
+          <p data-i18n="amenities.desk.desc">Заселение и поддержка в любое время суток</p>
         </div>
         <div class="amenity" data-reveal>
           <svg viewBox="0 0 24 24" class="amenity__icon"><path d="M18 2l-9 12h5l-4 8 11-13h-6z"/></svg>
-          <h3>Глажка и прачечная</h3>
-          <p>Услуги для аккуратного и свежего внешнего вида</p>
+          <h3 data-i18n="amenities.laundry.title">Глажка и прачечная</h3>
+          <p data-i18n="amenities.laundry.desc">Услуги для аккуратного и свежего внешнего вида</p>
         </div>
       </div>
     </div>
@@ -346,8 +354,8 @@
   <section class="gallery" id="gallery">
     <div class="container">
       <div class="section-head section-head--center" data-reveal>
-        <p class="eyebrow">Атмосфера</p>
-        <h2 class="section-title">Галерея</h2>
+        <p class="eyebrow" data-i18n="gallery.eyebrow">Атмосфера</p>
+        <h2 class="section-title" data-i18n="gallery.title">Галерея</h2>
       </div>
 
       <div class="gallery__grid" id="galleryGrid">
@@ -385,11 +393,11 @@
   <section class="reviews" id="reviews">
     <div class="container">
       <div class="section-head section-head--center" data-reveal>
-        <p class="eyebrow eyebrow--light">Отзывы гостей</p>
-        <h2 class="section-title section-title--light">Нам доверяют</h2>
+        <p class="eyebrow eyebrow--light" data-i18n="reviews.eyebrow">Отзывы гостей</p>
+        <h2 class="section-title section-title--light" data-i18n="reviews.title">Нам доверяют</h2>
         <div class="reviews__rating">
           <span class="reviews__stars">★★★★★</span>
-          <span>4.7 из 5 · 55 отзывов на 2ГИС</span>
+          <span data-i18n="reviews.rating">4.7 из 5 · 55 отзывов на 2ГИС</span>
         </div>
       </div>
 
@@ -397,23 +405,23 @@
         <div class="reviews__track" id="reviewsTrack">
           <article class="review-card">
             <span class="review-card__stars">★★★★★</span>
-            <p>«Заселились поздно вечером — никаких проблем, встретили быстро. Номер чистый, тихо, кондиционер работает отлично. За свои деньги — отличный вариант.»</p>
-            <div class="review-card__author"><strong>Айгерим</strong><span>Гость 2ГИС</span></div>
+            <p data-i18n="reviews.1.text">«Заселились поздно вечером — никаких проблем, встретили быстро. Номер чистый, тихо, кондиционер работает отлично. За свои деньги — отличный вариант.»</p>
+            <div class="review-card__author"><strong>Айгерим</strong><span data-i18n="reviews.1.source">Гость 2ГИС</span></div>
           </article>
           <article class="review-card">
             <span class="review-card__stars">★★★★★</span>
-            <p>«Останавливались на пол суток по пути в командировку. Всё аккуратно и по-домашнему: свежее бельё, приятный ремонт, удобная парковка рядом.»</p>
-            <div class="review-card__author"><strong>Данияр</strong><span>Гость Booking.com</span></div>
+            <p data-i18n="reviews.2.text">«Останавливались на пол суток по пути в командировку. Всё аккуратно и по-домашнему: свежее бельё, приятный ремонт, удобная парковка рядом.»</p>
+            <div class="review-card__author"><strong>Данияр</strong><span data-i18n="reviews.2.source">Гость Booking.com</span></div>
           </article>
           <article class="review-card">
             <span class="review-card__stars">★★★★★</span>
-            <p>«Хороший Wi-Fi, тепло и уютно. Стойка регистрации работает круглосуточно — заселились без проблем, хотя приехали за полночь.»</p>
-            <div class="review-card__author"><strong>Мария</strong><span>Гость 2ГИС</span></div>
+            <p data-i18n="reviews.3.text">«Хороший Wi-Fi, тепло и уютно. Стойка регистрации работает круглосуточно — заселились без проблем, хотя приехали за полночь.»</p>
+            <div class="review-card__author"><strong>Мария</strong><span data-i18n="reviews.3.source">Гость 2ГИС</span></div>
           </article>
           <article class="review-card">
             <span class="review-card__stars">★★★★★</span>
-            <p>«Бронировали номер № 27 — очень понравился: светлый, тихий, с удобной рабочей зоной. Обязательно вернёмся ещё.»</p>
-            <div class="review-card__author"><strong>Тимур</strong><span>Гость Booking.com</span></div>
+            <p data-i18n="reviews.4.text">«Бронировали номер № 27 — очень понравился: светлый, тихий, с удобной рабочей зоной. Обязательно вернёмся ещё.»</p>
+            <div class="review-card__author"><strong>Тимур</strong><span data-i18n="reviews.4.source">Гость Booking.com</span></div>
           </article>
         </div>
         <div class="reviews__controls">
@@ -435,7 +443,7 @@
         <img src="assets/img/logo-96.png" alt="IZI Hotel" width="44" height="44">
         <span class="brand__text">IZI <em>Hotel</em></span>
       </a>
-      <p>Современная гостиница в Алматы с уютными номерами, гибкими тарифами и круглосуточным сервисом.</p>
+      <p data-i18n="footer.tagline">Современная гостиница в Алматы с уютными номерами, гибкими тарифами и круглосуточным сервисом.</p>
       <div class="footer__social">
         <a href="https://www.instagram.com/izi_hotel_almaty?utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.8 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
@@ -453,20 +461,20 @@
     </div>
 
     <div class="footer__col">
-      <h4>Навигация</h4>
+      <h4 data-i18n="footer.nav.title">Навигация</h4>
       <ul>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#rooms">Номера</a></li>
-        <li><a href="#amenities">Удобства</a></li>
-        <li><a href="#map">Карта</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-        <li><a href="#gallery">Галерея</a></li>
-        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#about" data-i18n="nav.about">О нас</a></li>
+        <li><a href="#rooms" data-i18n="nav.rooms">Номера</a></li>
+        <li><a href="#amenities" data-i18n="nav.amenities">Удобства</a></li>
+        <li><a href="#map" data-i18n="nav.map">Карта</a></li>
+        <li><a href="#contacts" data-i18n="nav.contacts">Контакты</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Галерея</a></li>
+        <li><a href="#reviews" data-i18n="nav.reviews">Отзывы</a></li>
       </ul>
     </div>
 
     <div class="footer__col">
-      <h4>Контакты</h4>
+      <h4 data-i18n="footer.contacts.title">Контакты</h4>
       <ul>
         <li><a href="https://2gis.kz/almaty/geo/70000001112716389" target="_blank" rel="noopener">ул. Керуентау, 2/1, Алматы</a></li>
         <li><a href="tel:+77472559183">+7 747 255 91 83</a></li>
@@ -476,16 +484,16 @@
     </div>
 
     <div class="footer__col">
-      <h4>Бронирование</h4>
-      <p class="footer__note">Забронируйте номер онлайн или свяжитесь с нами напрямую — ответим быстро в любое время суток.</p>
-      <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" target="_blank" rel="noopener" class="btn btn--gold btn--sm">Забронировать номер</a>
+      <h4 data-i18n="footer.booking.title">Бронирование</h4>
+      <p class="footer__note" data-i18n="footer.booking.note">Забронируйте номер онлайн или свяжитесь с нами напрямую — ответим быстро в любое время суток.</p>
+      <a href="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" target="_blank" rel="noopener" class="btn btn--gold btn--sm" data-i18n="footer.booking.cta" data-href-ru="https://wa.me/77472559183?text=Здравствуйте!%20Хочу%20забронировать%20номер%20в%20IZI%20Hotel" data-href-en="https://wa.me/77472559183?text=Hello!%20I%20would%20like%20to%20book%20a%20room%20at%20IZI%20Hotel">Забронировать номер</a>
     </div>
   </div>
 
   <div class="footer__bottom">
     <div class="container footer__bottom-inner">
-      <p>© <span id="year"></span> IZI Hotel. Все права защищены.</p>
-      <p>Сделано с ♥ для гостей Алматы</p>
+      <p>© <span id="year"></span> <span data-i18n="footer.rights">IZI Hotel. Все права защищены.</span></p>
+      <p data-i18n="footer.madewith">Сделано с ♥ для гостей Алматы</p>
     </div>
   </div>
 </footer>
